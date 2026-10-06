@@ -24,43 +24,44 @@ def get_client_name(phone_number):
     """Generates a unique session name based on phone number to avoid conflicts."""
     clean_phone = phone_number.replace('+', '').replace('-', '').replace(' ', '')
     return f"wa_{clean_phone}"
+
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
-        "🤖 Lagos Life Bug Bot\n\n"
-        "/pair - Get WhatsApp Pairing Code & Auto-Confirm\n"
-        "/bug <number> - Send Bug Payload (Coming Soon)\n\n"
-        "Send /pair to begin."
-    )
+    await update.message.reply_text(
+        "🤖 Lagos Life Bug Bot\n\n"
+        "/pair - Get WhatsApp Pairing Code & Auto-Confirm\n"
+        "/bug <number> - Send Bug Payload (Coming Soon)\n\n"
+        "Send /pair to begin."
+    )
 
 async def pair_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Step 1: Ask for phone number"""
-    await update.message.reply_text("📲 Send me your WhatsApp number (with country code, e.g., +2348012345678)")
-    
-    # Store that this user is waiting for a number
-    pending_pairs[update.effective_user.id] = {
-        'state': 'waiting_for_number',
-        'user_id': update.effective_user.id
-    }
+    """Step 1: Ask for phone number"""
+    await update.message.reply_text("📲 Send me your WhatsApp number (with country code, e.g., +2348012345678)")
+
+    # Store that this user is waiting for a number
+    pending_pairs[update.effective_user.id] = {
+        'state': 'waiting_for_number',
+        'user_id': update.effective_user.id
+    }
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Handle the incoming phone number and trigger pairing"""
-    user_id = update.effective_user.id
-    
-    if user_id not in pending_pairs:
-        return
-        
-    state_data = pending_pairs[user_id]
-    state = state_data['state']
-    
-    if state == 'waiting_for_number':
-        phone_raw = update.message.text.strip()
-        
-        # Clean the phone number
-        phone_clean = ''.join(filter(str.isdigit, phone_raw))
-        
-        if not phone_clean.startswith('234'):
-            # Assume Nigerian if starting with 80, 81, 90, 91 etc.
-            if phone_clean.startswith(('80', '81', '90', '91')):
+    """Handle the incoming phone number and trigger pairing"""
+    user_id = update.effective_user.id
+
+    if user_id not in pending_pairs:
+        return
+
+    state_data = pending_pairs[user_id]
+    state = state_data['state']
+
+    if state == 'waiting_for_number':
+        phone_raw = update.message.text.strip()
+
+        # Clean the phone number
+        phone_clean = ''.join(filter(str.isdigit, phone_raw))
+
+        if not phone_clean.startswith('234'):
+            # Assume Nigerian if starting with 80, 81, 90, 91 etc.
+            if phone_clean.startswith(('80', '81', '90', '91')):
                 phone_clean = '234' + phone_clean
             else:
                 phone_clean = '+' + phone_clean
