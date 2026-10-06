@@ -21,10 +21,9 @@ logger = logging.getLogger(name)
 pending_pairs = {}
 
 def get_client_name(phone_number):
-     """Generates a unique session name based on phone number to avoid conflicts."""
-    clean_phone = phone_number.replace('+', '').replace('-', '').replace(' ', '')
-    return f"wa_{clean_phone}"
-
+    """Generates a unique session name based on phone number to avoid conflicts."""
+    clean_phone = phone_number.replace('+', '').replace('-', '').replace(' ', '')
+    return f"wa_{clean_phone}"
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "🤖 Lagos Life Bug Bot\n\n"
