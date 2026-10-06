@@ -21,7 +21,7 @@ logger = logging.getLogger(name)
 pending_pairs = {}
 
 def get_client_name(phone_number):
-  """Generates a unique session name based on phone number to avoid conflicts."""
+     """Generates a unique session name based on phone number to avoid conflicts."""
     clean_phone = phone_number.replace('+', '').replace('-', '').replace(' ', '')
     return f"wa_{clean_phone}"
 
