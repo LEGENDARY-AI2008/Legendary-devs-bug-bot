@@ -1,4 +1,0 @@
-python-telegram-bot==20.0
-pyrogram==2.0.30
-tgcrypto
-asyncio
