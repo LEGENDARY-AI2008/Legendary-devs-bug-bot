@@ -10,9 +10,9 @@ module.exports = {
     adminId:8088239068,
     
     // Telegram Links
-    channel: 'https://t.me/legendbotch1,
-    schannel: 'https://t.me/legendbotch1,
-    group: 'https://t.me/legendbotchannel,
+    channel: 'https://t.me/legendbotch1',
+    schannel: 'https://t.me/legendbotch1',
+    group: 'https://t.me/legendbotchannel',
     
     // Social Links
     youtube: 'https://www.youtube.com/@praisebrandgraphics',
