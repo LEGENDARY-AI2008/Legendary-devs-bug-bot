@@ -1,0 +1,27 @@
+{
+  "name": "Xeon-Bug-Bot-BY-S7",
+  "version": "1.0.0",
+  "description": "Advanced WhatsApp Crash Bot with Telegram Control Panel",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SABIR7718 (VOIDSEC)",
+  "license": "MIT",
+  "dependencies": {
+    "@sabir7718/log": "latest",
+    "@whiskeysockets/baileys": "7.0.0-rc13",
+    "dotenv": "^17.4.2",
+    "node-cache": "^5.1.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "pino": "^9.6.0",
+    "qrcode-terminal": "^0.12.0",
+    "ws": "^8.21.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
