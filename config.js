@@ -16,7 +16,7 @@ module.exports = {
     
     // Social Links
     youtube: 'https://www.youtube.com/@praisebrandgraphics',
-    waChannel: https://t.me/legendbotch1',
+    waChannel: 'https://t.me/legendbotch1',
     instagram: 'https://t.me/legendbotch1,
     
     // Channel/Group IDs (Bot admin hona chahiye)
