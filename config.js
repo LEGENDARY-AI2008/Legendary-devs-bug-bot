@@ -1,28 +1,28 @@
 module.exports = {
     // Telegram Bot Token
     // Set TELEGRAM_BOT_TOKEN in the environment. Never commit the token.
-    mainToken: process.env.TELEGRAM_BOT_TOKEN || '8573554767:AAGru_wGLurrSGECZupMD-HMWsgADaG76K0',
+    mainToken: process.env.TELEGRAM_BOT_TOKEN || '8969476004:AAFBnAAqxHjKDzLauSi_pKrf7-jQLqJ8aDo',
     
     // Developer Info
-    S7: '@DG_BAHIRAVA',
+    S7: '@LORDPRAISE001',
     
     // Admin ID (Tumhari ID)
-    adminId: 8954223707,
+    adminId:8088239068,
     
     // Telegram Links
-    channel: 'https://t.me/bahirava13',
-    schannel: 'https://t.me/Bahirava_Bot_Inc_Official',
-    group: 'https://t.me/Bahirava_Vip_Bot_Inc_Group',
+    channel: 'https://t.me/legendbotch1,
+    schannel: 'https://t.me/legendbotch1,
+    group: 'https://t.me/legendbotchannel,
     
     // Social Links
-    youtube: 'https://www.youtube.com/@bahiravabahirava-e1p5m',
-    waChannel: 'https://t.me/Bahirava_Md_Bot_Inc_Official',
-    instagram: 'https://t.me/Bahirava_Bot_Inc_Gc',
+    youtube: 'https://www.youtube.com/@praisebrandgraphics',
+    waChannel: https://t.me/legendbotch1',
+    instagram: 'https://t.me/legendbotch1,
     
     // Channel/Group IDs (Bot admin hona chahiye)
-    channelId: '-1004437981052',
-    schannelId: '-1004299221113',
-    groupId: '-1004426187311',
+    channelId: '-1003885127596',
+    schannelId: '-1003885127596,
+    groupId: '-1003919350759',
     
     // Bot Name
     bot: 'Bᴀʜɪʀᴀᴠᴀ Bᴜɢ  Bᴏᴛ',
