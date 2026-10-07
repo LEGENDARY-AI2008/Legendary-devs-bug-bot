@@ -1,3 +1,9 @@
+const http = require('http');
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end('LEGENDARY DEVS BUG BOT is running');
+}).listen(PORT, '0.0.0.0', () => console.log('Port open on', PORT));
 process.env.NTBA_FIX_350 = 1;
 const SY = require('node-telegram-bot-api');
 const fs = require('fs');
