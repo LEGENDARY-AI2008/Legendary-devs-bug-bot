@@ -25,7 +25,7 @@ module.exports = {
     groupId: '-1003919350759',
     
     // Bot Name
-    bot: 'Bᴀʜɪʀᴀᴠᴀ Bᴜɢ  Bᴏᴛ',
+    bot: 'LEGENDARY DEVS Bᴜɢ  Bᴏᴛ',
     
     // Video Path
     video: './SY/Bahirava.mp4'
