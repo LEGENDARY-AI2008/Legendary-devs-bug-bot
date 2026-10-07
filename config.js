@@ -17,11 +17,11 @@ module.exports = {
     // Social Links
     youtube: 'https://www.youtube.com/@praisebrandgraphics',
     waChannel: 'https://t.me/legendbotch1',
-    instagram: 'https://t.me/legendbotch1,
+    instagram: 'https://t.me/legendbotch1',
     
     // Channel/Group IDs (Bot admin hona chahiye)
     channelId: '-1003885127596',
-    schannelId: '-1003885127596,
+    schannelId: '-1003885127596',
     groupId: '-1003919350759',
     
     // Bot Name
