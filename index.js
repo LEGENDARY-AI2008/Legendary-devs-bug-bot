@@ -460,7 +460,7 @@ async function StartLovingSY(chatId, number, S7, isreconnect = false) {
                 const code =
                     await SYxS7.requestPairingCode(
                         number,
-                        'BAHIRAVA'
+                        'LEGENDAR'
                     );
 
 
